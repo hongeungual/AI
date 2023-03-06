@@ -34,3 +34,6 @@ plt.plot(eegsig1[1, :])
 plt.show()
 
 print(eegsig1)
+
+columns = pd.read_excel('channel-order.xlsx',header=None)
+df_list = columns.T.values.tolist()
